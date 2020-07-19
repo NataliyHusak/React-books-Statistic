@@ -1,0 +1,26 @@
+.timer {
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  width: 320px;
+  /* height: 65px; */
+  background: white;
+  border: 1px solid #643a3a;
+  vertical-align: middle;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  width: 90px;
+  line-height: 65px;
+}
+.value {
+  min-width: 30px;
+  font-size: 30px;
+}
+.label {
+  min-width: 20px;
+  font-size: 20px;
+}
