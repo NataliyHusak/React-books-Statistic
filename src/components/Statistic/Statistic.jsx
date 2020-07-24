@@ -21,7 +21,10 @@ class Statistic extends Component {
             </li>
           </ul>
           <BookList items={books} />
-          <div className={styles.sectionRes}>Результат</div>
+          <div className={styles.sectionRes}>
+            <p>Кількість сторінок / день - </p>
+            <p>13</p>
+          </div>
         </div>
         <div className={styles.sectionGoal}>
           <ul className={styles.goalList}>

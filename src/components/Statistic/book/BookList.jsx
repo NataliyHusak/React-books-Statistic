@@ -7,16 +7,18 @@ const BookList = ({items}) => (
   <table className={styles["books"]}>
     <thead>
       <tr className={styles.tHead}>
+        <th></th>
         <th>Назва книги</th>
         <th>Автор</th>
         <th>Рік</th>
-        <th>Сторінки</th>
+        <th>Стор.</th>
       </tr>
     </thead>
 
     <tbody>
-      {items.map(({id, title, author, year, sheets}) => (
+      {items.map(({id,readed, title, author, year, sheets}) => (
         <tr key={id}>
+          <td className={styles.tBlock}> {readed}</td>
           <td className={styles.tContain}>{title}</td>
           <td className={styles.tContain}>{author}</td>
           <td className={styles.tContain}>{year}</td>

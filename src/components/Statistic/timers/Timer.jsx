@@ -3,21 +3,24 @@ import styles from "./Timer.module.css";
 
 const Timer = ({ items }) => (
   <div className={styles.timer}>
-    <div сlassName={styles.field}>
-      <span className={styles.value}> 00 :</span>
-      <span сlassName={styles.label}>дн </span>
+    <div className={styles.field}>
+      <div className={styles.value}>00</div>
+      <div className={styles.label}>дн </div>
     </div>
-    <div сlassName={styles.field}>
-      <span className={styles.value}> 00 :</span>
-      <span сlassName={styles.label}>год </span>
+    <div style={{ fontSize: 30 }}>:</div>
+    <div className={styles.field}>
+      <div className={styles.value}>00</div>
+      <div className={styles.label}>год </div>
     </div>
-    <div сlassName={styles.field}>
-      <span className={styles.value}> 00 :</span>
-      <span сlassName={styles.label}>хв </span>
+    <div style={{ fontSize: 30 }}>:</div>
+    <div className={styles.field}>
+      <div className={styles.value}>00</div>
+      <div className={styles.label}>хв</div>
     </div>
-    <div сlassName={styles.field}>
-      <span className={styles.value}> 00 :</span>
-      <span сlassName={styles.label}>сек </span>
+    <div style={{ fontSize: 30 }}>:</div>
+    <div className={styles.field}>
+      <div className={styles.value}> 00</div>
+      <div className={styles.label}>сек</div>
     </div>
   </div>
 );
